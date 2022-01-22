@@ -1,9 +1,9 @@
-    .features-list {
+    .features__list {
         display: flex;
         flex-wrap: wrap;
         }
     
-    .features-icon-bg {
+    .features__bg {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -14,15 +14,15 @@
         border-radius: 4px;
     }
 
-    .features-item {
+    .features__item {
         width: 270px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
     
-    .features-list .features-item:not(:last-child) {
-        margin-right: 30px;
-    }
-    
-    .features-title {
+    .features__title {
         margin-bottom: 10px;
         font-weight: 700;
         font-size: 14px;
@@ -31,7 +31,7 @@
         text-transform: uppercase;
     }
     
-    .features-text {
+    .features__text {
         margin-top: 0;
         font-weight: 400;
         font-size: 14px;
